@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <title>304 Blaster Up | Hỗ trợ tìm nhà trọ TDMU</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+  
+    <!-- Favicons -->
+    <link href="img/tdmu.png" rel="icon">
+    <!--<link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4702f02b2a.js" crossorigin="anonymous"></script>
+  
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/rangeslider.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: EstateAgency
+    Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <div class="click-closed"></div>
+  <!--/ Form Search Star /-->
+  <div class="box-collapse">
+    <div class="title-box-d">
+      <h3 class="title-d">Tìm kiếm phòng trọ</h3>
+    </div>
+    <span class="close-box-collapse right-boxed ion-ios-close"></span>
+    <div class="box-collapse-wrap form">
+      <form class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label for="Type">Tên phòng trọ</label>
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Tên phòng trọ">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="Type">Khu vực</label>
+              <select class="form-control form-control-lg form-control-a" id="Type">
+                <option>Thủ Dầu Một</option>
+                <option>Thuận An</option>
+                <option>Tân Uyên</option>
+                <option>Bến Cát</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="city">Gần trường TDMU</label>
+              <select class="form-control form-control-lg form-control-a" id="city">
+                <option>Có</option>
+                <option>Không</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="rent">Giá</label>
+              <select class="form-control form-control-lg form-control-a" id="rent">
+                <option>Dưới 1 triệu</option>
+                <option>1 triệu - 2 triệu</option>
+                <option>Trên 2 triệu</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-b">Tìm kiếm</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!--/ Form Search End /-->
+ 
+  <!--/ Nav Star -->
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+    <div class="container">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="navbar-brand text-brand" href="index.html"><img style="font-size: medium;" src="https://fbu.edu.vn/wp-content/uploads/2021/03/Group-134.png" style="width: 30%"></a>
+      <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="property-grid.html">Tìm phòng</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Đăng nhập</a>
+          </li>
+          
+        </ul>
+      </div>
+      <button type="button" class="btn btn-b-n navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse"
+        data-target="#navbarTogglerDemo01" aria-expanded="false">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+      
+      <!--
+      <div class="dropacc">
+        <button class="dropaccbtn"><i class="fas fa-user" style="color:white; font-size: 24px;" align="middle"></i></button>
+        <div align="left" class="dropacc-content">
+            <a href="login.html">Đăng nhập</a>
+            <a href="#">Đăng ký</a>
+        </div>
+      </div>
+    -->
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Single star /-->
+  <section class="intro-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-8">
+          <div class="title-single-box">
+            <h1 class="title-single">304 Blaster Up</h1>
+            <span class="color-text-a" style="color: grey;">Chicago, IL 606543</span>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="property-grid.html">Tìm phòng</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                304 Blaster Up
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Intro Single End /-->
+
+  <!--/ Property Single Star /-->
+  <section class="property-single nav-arrow-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
+            
+            <div class="carousel-item-b">
+              <img src="img/slide3.jpg" alt="">
+            </div>
+            <div class="carousel-item-b">
+              <img src="img/slide1.jpg" alt="">
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-md-5 col-lg-4">
+              <div class="property-price d-flex justify-content-center foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <span class="ion-money">$</span>
+                  </div>
+                  <div class="card-title-c align-self-center">
+                    <h5 class="title-c">15000</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="property-summary">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="title-box-d section-t4">
+                      <h3 class="title-d">Quick Summary</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="summary-list">
+                  <ul class="list">
+                    <li class="d-flex justify-content-between">
+                      <strong>Property ID:</strong>
+                      <span>1134</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Location:</strong>
+                      <span>Chicago, IL 606543</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Property Type:</strong>
+                      <span>House</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Status:</strong>
+                      <span>Sale</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Area:</strong>
+                      <span>340m
+                        <sup>2</sup>
+                      </span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Beds:</strong>
+                      <span>4</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Baths:</strong>
+                      <span>2</span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Garage:</strong>
+                      <span>1</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-7 section-md-t3">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="title-box-d">
+                    <h3 class="title-d">Property Description</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="property-description">
+                <p class="description color-text-a" style="color: grey;">
+                  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+                  neque, auctor sit amet
+                  aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta.
+                  Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt
+                  nibh pulvinar quam id dui posuere blandit.
+                </p>
+                <p class="description color-text-a no-margin" style="color: grey;">
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget
+                  malesuada. Quisque velit nisi,
+                  pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
+                </p>
+              </div>
+              <div class="row section-t3">
+                <div class="col-sm-12">
+                  <div class="title-box-d">
+                    <h3 class="title-d">Amenities</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="amenities-list color-text-a">
+                <ul class="list-a no-margin">
+                  <li>Balcony</li>
+                  <li>Outdoor Kitchen</li>
+                  <li>Cable Tv</li>
+                  <li>Deck</li>
+                  <li>Tennis Courts</li>
+                  <li>Internet</li>
+                  <li>Parking</li>
+                  <li>Sun Room</li>
+                  <li>Concrete Flooring</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10 offset-md-1">
+          <ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-video-tab" data-toggle="pill" href="#pills-video" role="tab"
+                aria-controls="pills-video" aria-selected="true">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-plans-tab" data-toggle="pill" href="#pills-plans" role="tab" aria-controls="pills-plans"
+                aria-selected="false">Ảnh 360 độ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-map-tab" data-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-map"
+                aria-selected="false">Bản đồ</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+              <iframe width="100%" height="460" src="https://www.youtube-nocookie.com/embed/dyRsYk0LyA8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="tab-pane fade" id="pills-plans" role="tabpanel" aria-labelledby="pills-plans-tab">
+              <img src="img/plan2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="tab-pane fade" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6939595705!2d106.66442911411806!3d10.986456858287577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d122bc1501c7%3A0xb75503504dfd5643!2zMTMgSHXhu7NuaCBWxINuIEzFqXksIFBow7ogTOG7o2ksIFRo4bunIEThuqd1IE3hu5l0LCBCw6xuaCBExrDGoW5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1602321351580!5m2!1svi!2s" width="100%" height="460" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="row section-t3">
+            <div class="col-sm-12">
+              <div class="title-box-d">
+                <h3 class="title-d">Liên lạc với chủ trọ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <img src="img/avt2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="property-agent">
+                <h4 class="title-agent">Phạm Minh Nghĩa</h4>
+                <p class="color-text-a" style="color: grey;">
+                  Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                  dui. Quisque velit nisi,
+                  pretium ut lacinia in, elementum id enim.
+                </p>
+                <ul class="list-unstyled">
+                  <li class="d-flex justify-content-between">
+                    <strong>Phone:</strong>
+                    <span class="color-text-a" style="color: grey;">(222) 4568932</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <strong>Mobile:</strong>
+                    <span class="color-text-a" style="color: grey;">777 287 378 737</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <strong>Email:</strong>
+                    <span class="color-text-a" style="color: grey;">annabella@example.com</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <strong>Skype:</strong>
+                    <span class="color-text-a" style="color: grey;">Annabela.ge</span>
+                  </li>
+                </ul>
+                <div class="socials-a">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <div class="property-contact">
+                <form class="form-a">
+                  <div class="row">
+                    <div class="col-md-12 mb-1">
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-lg form-control-a" id="inputName"
+                          placeholder="Tên *" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-1">
+                      <div class="form-group">
+                        <input type="email" class="form-control form-control-lg form-control-a" id="inputEmail1"
+                          placeholder="Email *" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-1">
+                      <div class="form-group">
+                        <textarea id="textMessage" class="form-control" placeholder="Lời nhắn *" name="message" cols="45"
+                          rows="8" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-a">Gửi</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Property Single End /-->
+
+  <!--/ footer Star /-->
+  <section class="section-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="widget-a">
+            
+            <div class="w-body-a">
+              <img src="https://fbu.edu.vn/wp-content/uploads/2021/03/Group-134.png" style="width: 80%;">
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Thông tin website</h3>
+            </div>
+            <div class="w-footer-a">
+              <ul class="list-unstyled">
+                <li class="color-a">
+                  <span class="color-text-a">Địa chỉ:</span> 200, Trần Văn Ơn, Phú Hoà, Thủ Dầu Một, Bình Dương</li>
+                <li class="color-a">
+                  <span class="color-text-a">Điện thoại: </span> 034 6489 037</li>
+                <li class="color-a">
+                  <span class="color-text-a">Email: </span> hieuleggo1280@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Mạng xã hội</h3>
+            </div>
+            <div class="w-body-a">
+              <div class="socials-a">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    
+          
+            <div class="copyright-footer">
+              <p class="copyright color-text-a">
+                Bản quyền thuộc về &copy;
+                <strong><span class="color-a">BlinkBoy</span></strong>
+              </p>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/scrollreveal/scrollreveal.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

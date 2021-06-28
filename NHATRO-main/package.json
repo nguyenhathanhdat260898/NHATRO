@@ -1,0 +1,26 @@
+{
+  "name": "nhatro",
+  "version": "1.0.0",
+  "description": "Project Xây dựng website hỗ trợ tìm nhà trọ cho sinh viên ĐH TDM",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhhieu12/NHATRO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhhieu12/NHATRO/issues"
+  },
+  "homepage": "https://github.com/minhhieu12/NHATRO#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}

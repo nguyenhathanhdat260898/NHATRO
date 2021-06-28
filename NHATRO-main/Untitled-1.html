@@ -1,0 +1,131 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.js"></script>
+    <script type = "text/javascript">
+        $(document).ready(function () {
+            var book = {};
+            var dynamicURL = "";
+            var methodName = "";
+            getAllBooks();
+            $('#btnAddBook').click(function () {
+                book.title = $('#txtTitle').val();
+                book.author = $('#txtAuthor').val();
+                var bookId = $('#txtId').val();
+                if(bookId){
+                    //update it
+                    dynamicURL = "http://localhost:8037/spring-mvc-restfull-crud-example/book/"+bookId;
+                    methodName = "PUT";
+                }else{
+                    //save it
+                    dynamicURL = "http://localhost:8037/spring-mvc-restfull-crud-example/book/";
+                    methodName = "POST";
+                }
+                var bookObj = JSON.stringify(book);
+                $.ajax({
+                    url: dynamicURL,
+                    method: methodName,
+                    data: bookObj,
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        alert('Saved successfully');
+                        getAllBooks();
+                        reset();
+                    },
+                    error: function (error) {
+                        alert(error);
+                    }
+                })
+            })
+        })
+
+        function getAllBooks() {
+            $.ajax({
+                url: "http://localhost:8037/spring-mvc-restfull-crud-example/book",
+                method: "GET",
+                dataType: "json",
+                success: function (data) {
+                    var tableBody = $('#tblBook tbody');
+                    tableBody.empty();
+                    $(data).each(function (index, element) {
+                        tableBody.append('<tr><td>'+element.title+'</td><td>'+element.author+'</td><td><button onclick = "update('+element.id+')">Update</button> | <button onclick = "deleteBook('+element.id+')">Delete</button></td></tr>');
+                    })
+                },
+                error: function (error) {
+                    alert(error);
+                }
+            })
+        }
+
+        function deleteBook(id){
+            $.ajax({
+                url: 'http://localhost:8037/spring-mvc-restfull-crud-example/book/'+id,
+                method: 'DELETE',
+                success: function () {
+                    alert('record has been deleted');
+                    getAllBooks();
+                },
+                error: function (error) {
+                    alert(error);
+                }
+            })
+        }
+
+        function update(id){
+            $.ajax({
+                url: 'http://localhost:8037/spring-mvc-restfull-crud-example/book/'+id,
+                method: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    $('#txtTitle').val(data.title);
+                    $('#txtAuthor').val(data.author);
+                    $('#txtId').val(data.id);
+                    getAllBooks();
+                },
+                error: function (error) {
+                    alert(error);
+                }
+            })
+        }
+
+        function reset(){
+            $('#txtTitle').val('');
+            $('#txtAuthor').val('');
+            $('#txtId').val('');
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <table>
+            
+                <td><input type="text" id = "txtId" hidden></td>
+            
+            <tr>
+                <td>Title</td>
+                <td><input type="text" id = "txtTitle"></td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td><input type="text" id = "txtAuthor"></td>
+            </tr>
+            <tr colspan = "2">
+                <td><input type="button" value="Add Book" id="btnAddBook"></td>
+            </tr>
+        </table>
+        <table border = "1" id = "tblBook">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
